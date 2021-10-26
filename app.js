@@ -12,30 +12,30 @@ const multiplicacion = require('./multiplicacion');
 const dividir = require('./dividir');
 
 //CALCULADORA GENERICA
-console.log("*Calculadora generica*");
+console.log("*********CALCULADORA GENERICA*********");
 console.log("Suma de 5 + 10 = " + suma(5,10));
 console.log("Resta de 15 - 10 = " + resta(15,10));
 console.log("Multiplicacion de 5 * 10 = " + multiplicacion(5,10));
 console.log("Multiplicacion de 5 * 0 = " + multiplicacion(5,0));
 console.log("Division de 15 / 5 = " + dividir(15,5));
 console.log("Division de 15 / 0 = " + dividir(15,0));
-
+console.log("");
 //CALCU PRO
-console.log("------------CALCULADORA---------------");
+console.log("-----------CALCULADORA PRO-------------");
 
-rl.question('Pulsa (1)Suma, (2)Resta, (3)Multiplicacion o (4)Division: ', (answerCase) => {
+rl.question('Pulsa 1-Suma 2-Resta 3-Multiplicacion o 4-Division: ', (answerCase) => {
     switch(answerCase) {
         case '1':
-            console.log("--------SUMA--------");
+            console.log("----> SUMA");
           break;
         case '2':
-            console.log("--------RESTA--------");
+            console.log("----> RESTA");
           break;
         case '3':
-            console.log("------MULTIPLICACION------");
+            console.log("----> MULTIPLICACION");
           break;
         case '4':
-            console.log("--------DIVISION---------");
+            console.log("----> DIVISION");
           break;
         default:
           console.log("Lo sentimos, esa opcion no esta disponible.");
